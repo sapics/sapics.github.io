@@ -2,10 +2,15 @@
 <head>
 <title>fetch event demo</title>
 <script>
-console.log('START')
-navigator.serviceWorker.register('/test1/sw.js');
+window.onload = function(){
+	console.log('START')
+	navigator.serviceWorker.register('/test1/sw.js');
+	var img = new Image()
+	img.src = '/test1/a.png'
+	document.body.appendChild(img)
+}
 </script>
 </head>
 <body>
-<img src='/test1/a/test.png'>
+test<br>
 </body>

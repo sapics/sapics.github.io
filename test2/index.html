@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <head>
-<title>test1</title>
+<title>test2</title>
 <script>
 window.onload = function(){
 	console.log('START')
-	navigator.serviceWorker.register('/test1/sw.js');
+	navigator.serviceWorker.register('/test2/sw.js', {scope: '/test2/img/'});
 	setTimeout(function(){
 		var img = new Image()
-		img.src = '/test1/a.png'
+		img.src = '/test2/img/a.png'
 		document.getElementById('img').appendChild(img)
 	}, 5000)
 }

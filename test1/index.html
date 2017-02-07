@@ -5,12 +5,14 @@
 window.onload = function(){
 	console.log('START')
 	navigator.serviceWorker.register('/test1/sw.js');
-	var img = new Image()
-	img.src = '/test1/a.png'
-	document.body.appendChild(img)
+	setTimeout(function(){
+		var img = new Image()
+		img.src = '/test1/a.png'
+		document.body.appendChild(img)
+	}, 2000)
 }
 </script>
 </head>
 <body>
-test<br>
+test image<br>
 </body>

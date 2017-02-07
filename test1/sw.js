@@ -15,9 +15,7 @@ self.addEventListener('fetch', (event) => {
 			event.request.url.indexOf('.png') !== -1 ?
 			'/test1/test.png' :
 			'/test1/index.html'
-		, {
-			headers: {'Cache-Control': 'no-cache'}
-		}
+		, {headers: {'Cache-Control': 'no-cache'}}
 		)
 	)
-});
+})

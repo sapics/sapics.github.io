@@ -8,11 +8,12 @@ window.onload = function(){
 	setTimeout(function(){
 		var img = new Image()
 		img.src = '/test1/a.png'
-		document.body.appendChild(img)
+		document.getElementById('img').appendChild(img)
 	}, 5000)
 }
 </script>
 </head>
 <body>
 	<p>test image</p>
+	<p id='img'></p>
 </body>
